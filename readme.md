@@ -3,7 +3,9 @@
 ### 服务端启动
 
 官网 release 地址： https://github.com/alibaba/Sentinel/releases
-启动
+
+**启动**
+
 ```
 ➜  ~ java -jar -Dserver.port=10086 sentinel-dashboard-2.0.0-alpha-preview.jar
 
@@ -19,16 +21,17 @@ maven依赖
     <version>2021.1</version>
 </dependency>
 ```
-sentinel配置
+**sentinel配置**
+
 ```yaml
 spring:
   cloud:
     sentinel:
       transport:
-        dashboard: localhost:8080
-        port: 8719
+        dashboard: localhost:10086
 ```
-启动类添加注解
+**启动类添加注解**
+
 ```java
 
 @SpringBootApplication

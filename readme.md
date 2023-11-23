@@ -1,10 +1,13 @@
-#my-sentinel
+# my-sentinel
 
 ### 服务端启动
 
-https://github.com/alibaba/Sentinel/releases
+官网 release 地址： https://github.com/alibaba/Sentinel/releases
+启动
+```
+➜  ~ java -jar -Dserver.port=10086 sentinel-dashboard-2.0.0-alpha-preview.jar
 
-
+```
 ### 客户端启动
 
 maven依赖
